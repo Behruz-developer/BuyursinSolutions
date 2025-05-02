@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import './mixin.scss', '../../Components/Nav/Nav.scss',
+'../../Components/Upcoming/Upcoming.scss',
+'../../Components/Results/Results.scss',
+'../../Components/Button/Button.scss',
+'../../Components/About/About.scss',
+'../../Components/Team/Team.scss',
+'../../Components/Footer/Footer.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.container {
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

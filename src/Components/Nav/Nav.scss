@@ -1,0 +1,201 @@
+.nav {
+    padding: 40px 0;
+
+    &_logo {
+        img {
+            width: 198px;
+
+            @include media(1200) {
+                width: 170px;
+            }
+        }
+    }
+
+    &_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 4%;
+    }
+
+    &_box2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+
+        @include media(1000) {
+            justify-content: unset;
+            max-width: 300px;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            flex-direction: column;
+            top: 0;
+            right: 0;
+            background-color: rgba(239, 239, 239, 0.9);
+            padding-top: 80px ;
+            gap: 20px;
+            transform: translateX(110%);
+            z-index: 99;
+            transition: 0.5s;
+            &.active{
+                transform: translateX(0);
+            }
+        }
+    }
+
+    &_list {
+        display: flex;
+        gap: 30px;
+
+        @include media(1200) {
+            gap: 20px;
+        }
+
+        @include media(1000) {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+    }
+
+    &_link {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        color: #3D4C70;
+
+        @include media(1200) {
+            font-size: 18px;
+        }
+    }
+
+    &_link:hover {
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+    }
+
+    &_phone {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #3D4C70;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+
+        &_icon {
+            width: 25px;
+            height: 25px;
+            color: #3D4C70;
+        }
+    }
+
+    &_language {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+
+        &_link,
+        p {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            color: #3D4C7080;
+
+            &.active {
+                color: #3D4C70;
+            }
+
+            @include media(1200) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &_socials {
+        display: flex;
+        gap: 10px;
+
+
+        &_link {
+            width: 46px;
+            height: 46px;
+            background-color: #758AC5;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include media(1200) {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &_icon {
+            color: white;
+            width: 20px;
+            height: 20px;
+
+            @include media(1200) {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    &_menu,
+    &_close {
+        width: 40px;
+        height: 40px;
+        color: #3D4C70;
+        display: none;
+
+        @include media(1000) {
+            display: block;
+        }
+    }
+    &_close{
+        @include media(1000) {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+    }
+
+}
+
+.path {
+    &_box {
+        display: flex;
+        gap: 8px;
+
+    }
+
+    &_link,
+    p,
+    &_link1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        color: #3D4C70;
+    }
+
+    &_link1 {
+        color: #3D4C7080;
+    }
+}
