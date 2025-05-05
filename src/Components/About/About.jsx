@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { FaHeadset } from "react-icons/fa";
 import officeImage from '../../assets/images/offise.jpg';
 import useLanguageStore from '../../store/languageStore';
@@ -11,12 +11,8 @@ const tabs = [
 ];
 
 const About = () => {
-    const {activeTab, setActiveTab} = useLanguageStore();
+    const { activeTab, setActiveTab } = useLanguageStore();
     const tabCount = tabs.length;
-    const lineRef = useRef(null);
-
-
-
     return (
         <div className="about">
             <div className="container">
@@ -28,7 +24,7 @@ const About = () => {
                         </a>
                     </div>
                     <div className="about_box_tab">
-                        <div className="about_box_tab_content_line" ref={lineRef}>
+                        <div className="about_box_tab_content_line" >
                             <div
                                 className="active_line"
                                 style={{
